@@ -1,3 +1,70 @@
-torch
-transformers
-sentencepiece
+1. Hardware Requirements
+Component-Purpose
+Raspberry Pi 4/5 (64-bit)- Runs the AI application
+MicroSD card (16–32 GB)-Stores OS, code and model
+USB-C power adapter-Supplies power
+HDMI display-Displays generated results
+Keyboard and mouse- User input
+
+2. Software Requirements
+Software / Library- Purpose
+Raspberry Pi OS (64-bit)- Operating system
+Python 3- Application development
+ExecuTorch-Local AI model inference
+PyTorch- AI model preparation
+Transformers- Model and tokenizer support
+Git and GitHub- Version control and code hosting
+VS Code- Code editor
+
+PyTorch
+AI framework
+* Performs mathematical operations for AI.
+* Creates and runs deep learning models.
+* Handles tensors (multidimensional numerical data).
+* Helps prepare and export models for deployment.
+In our project: Helps load and run the AI model in the Windows prototype and prepare models for ExecuTorch deployment.
+
+Transformers
+Language model library
+
+* Provides access to pretrained AI models.
+* Helps understand and process human language.
+* Generates text and answers.
+* Supports models used for summarisation, translation and question answering.
+In our project: Helps the application use a language model to generate simple summaries and quiz questions.
+
+SentencePiece
+Text tokenizer
+
+* Divides sentences into smaller units called tokens.
+* Converts text into numerical token IDs.
+* Helps AI models process words and sentences.
+* Supports subword tokenization.
+In our project: Converts the educational passage into tokens that the language model can process, when its tokenizer requires SentencePiece.
+
+3. Functional Requirements
+. Accept an educational passage of approximately 150–300 words.
+. Process the passage using a lightweight AI model.
+. Generate a short and simple summary.
+. Generate at least three relevant quiz questions.
+. Display the generated learning materials.
+. Operate without cloud AI inference or internet access during processing.
+
+4. Non-Functional Requirements
+
+- Affordable and lightweight implementation.
+- Simple and user-friendly interface.
+- Offline accessibility.
+- Fast response and reliable output.
+- Understandable content for students.
+
+5. Expected Output
+- Simplified educational summary.
+- Minimum three relevant quiz questions.
+- Model name and model size.
+- Approximate inference time and memory usage.
+- Demonstration of offline operation.
+
+6. Target Users
+School students in rural, underserved and low-internet-connectivity areas.
+Project Goal: To make educational support more accessible through affordable, offline AI technology.
