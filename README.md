@@ -1,4 +1,4 @@
-# Offline Smart Learning Assistant
+# ASK ME -Offline Smart Learning Assistant
 
 **AI for Inclusive Education — software prototype**
 
